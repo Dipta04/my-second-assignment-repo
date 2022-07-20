@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>animation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        @keyframes slidding {
+            from{
+            background-color: aqua;
+         left: 0px;}
+            to{
+            background-color: blue;
+        left: 300px;}
+        }
+        .stage{height:500px;
+        width: 500px;background-color: aqua;}
+        .ball{height: 100px;width: 100px;border-radius: 50px;
+        background-color: brown;animation: slidding 1s ease-in-out 1s infinite alternate ;animation-play-state: running;position: relative;}
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
